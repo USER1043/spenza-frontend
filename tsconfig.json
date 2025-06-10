@@ -3,15 +3,18 @@
   "compilerOptions": {
     "strict": true,
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "expo-env.d.ts",
+    "app/_layout.jsx",
+    "app/about.jsx",
+    "app/index.jsx",
+    "components/SafeScreen.jsx",
+    "components/SafeScreen.jsx"
   ]
 }
