@@ -1,50 +1,126 @@
-# Welcome to your Expo app 👋
+# 💰 Spenza - Money Tracker App (React Native + Express.js)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **full-stack finance tracker app** built using **React Native (Expo)** for the frontend and **Express.js + PostgreSQL** for the backend. The project allows users to **track income and expenses**, **tag transactions**, and **view summary via a dashboard**. It features **user authentication** with [Clerk](https://clerk.dev), **rate-limiting** using Upstash Redis, and a backend hosted on [Render.com](https://render.com) with a Neon.tech PostgreSQL database.
 
-## Get started
+> 🔗 Inspired by [@codesistency](https://youtu.be/vk13GJi4Vd0?si=5Io6q3vR2CfVpuH6)'s YouTube tutorial.
 
-1. Install dependencies
+---
+
+## 🧰 Tech Stack
+
+### Frontend
+- **React Native (Expo)**
+- **React Navigation**
+- **Clerk** (Authentication)
+- **Axios** (API calls)
+
+### Backend
+- **Express.js**
+- **PostgreSQL (Neon.tech)**
+- **Upstash Redis** (Rate limiting)
+- **Render.com** (Deployment)
+
+---
+
+## 🔐 Authentication
+
+User authentication is handled by [Clerk](https://clerk.dev), which provides secure sign-up and login flows.
+
+---
+
+## 🚀 Features
+
+- **User Auth**: Sign-up / Sign-in via Clerk
+- **Dashboard**: Summary of all transactions
+- **Transaction List**: View all past income/expenses
+- **Add Transaction**:
+  - Input income or expense
+  - Tag your transactions (e.g., Food, Rent, Salary)
+- **Rate Limiting**:
+  - Currently Simple request limiting using **Upstash Redis**
+  - Future plan: rate-limit **per user**
+
+---
+
+##🎯 Frontend Overview (React Native + Expo)
+
+The frontend is built using React Native with Expo, providing a smooth and cross-platform mobile experience. It handles user authentication, transaction management, and finance visualization.
+###🔧 Key Features
+
+   - Authentication:
+
+      - Sign In / Sign Up with Clerk
+
+      - Seamless integration of secure user sessions
+
+   - Dashboard:
+
+      - View total income, expenses, and balance
+
+      - Clean summary UI at the top
+
+   - Transaction List:
+
+      - Scrollable list of all previous transactions
+
+      - Each item displays amount, type (income/expense), and tags
+
+   - Create Transaction:
+
+      - Add new income or expense
+
+      - Tag each transaction (e.g., Food, Salary, Rent)
+
+      - Automatically updates dashboard and list
+
+---
+
+## 🌐 Backend Overview
+
+- Built with **Express.js**
+- **PostgreSQL** database hosted on **Neon.tech**
+- Backend hosted on **Render.com**
+- **RESTful API** with protected endpoints
+- **Rate-limiting middleware** using **Upstash Redis** for controlling request frequency
+
+---
+
+## 🛠 Setup Instructions
+
+### Frontend
+
+1. Install Expo CLI (if not already installed)
+   ```bash
+   npm install -g expo-cli
+   ```
+2. Clone the repo and install dependencies
 
    ```bash
+   git clone https://github.com/USER1043/spenza-frontend.git
    npm install
    ```
+3. Start the development server
 
-2. Start the app
+    expo start
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+##📈 Planned Improvements
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    ✅ Per-user rate limiting (in progress)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    ⏳ Monthly transaction summaries
 
-## Get a fresh project
+    ⏳ Data visualization (charts for spend/income patterns)
 
-When you're ready, run:
+    ⏳ Offline support
 
-```bash
-npm run reset-project
-```
+##📹 Tutorial Reference
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Built by following this awesome tutorial by @codesistency:
+👉 [YouTube Link](https://youtu.be/vk13GJi4Vd0?si=5Io6q3vR2CfVpuH6)
 
-## Learn more
+##🤝 Contributing
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Thanks for checking out Spenza!
+Feel free to fork this repo, suggest improvements, or open a pull request — contributions are always welcome! 💸🚀
