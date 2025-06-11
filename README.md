@@ -2,6 +2,9 @@
 
 A **full-stack finance tracker app** built using **React Native (Expo)** for the frontend and **Express.js + PostgreSQL** for the backend. The project allows users to **track income and expenses**, **tag transactions**, and **view summary via a dashboard**. It features **user authentication** with [Clerk](https://clerk.dev), **rate-limiting** using Upstash Redis, and a backend hosted on [Render.com](https://render.com) with a Neon.tech PostgreSQL database.
 
+## Looking for the backend? Check it out here 👉
+[Spenza Backend Repo](https://github.com/USER1043/spenza-api.git)
+
 > 🔗 Inspired by [@codesistency](https://youtu.be/vk13GJi4Vd0?si=5Io6q3vR2CfVpuH6)'s YouTube tutorial.
 
 ---
