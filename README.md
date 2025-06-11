@@ -42,10 +42,10 @@ User authentication is handled by [Clerk](https://clerk.dev), which provides sec
 
 ---
 
-##🎯 Frontend Overview (React Native + Expo)
+## 🎯 Frontend Overview (React Native + Expo)
 
 The frontend is built using React Native with Expo, providing a smooth and cross-platform mobile experience. It handles user authentication, transaction management, and finance visualization.
-###🔧 Key Features
+### 🔧 Key Features
 
    - Authentication:
 
@@ -105,7 +105,7 @@ The frontend is built using React Native with Expo, providing a smooth and cross
 
 ---
 
-##📈 Planned Improvements
+## 📈 Planned Improvements
 
     ✅ Per-user rate limiting (in progress)
 
@@ -115,12 +115,12 @@ The frontend is built using React Native with Expo, providing a smooth and cross
 
     ⏳ Offline support
 
-##📹 Tutorial Reference
+## 📹 Tutorial Reference
 
 Built by following this awesome tutorial by @codesistency:
 👉 [YouTube Link](https://youtu.be/vk13GJi4Vd0?si=5Io6q3vR2CfVpuH6)
 
-##🤝 Contributing
+## 🤝 Contributing
 
 Thanks for checking out Spenza!
 Feel free to fork this repo, suggest improvements, or open a pull request — contributions are always welcome! 💸🚀
