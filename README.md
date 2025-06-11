@@ -1,6 +1,6 @@
 # 💰 Spenza - Money Tracker App (React Native + Express.js)
 
-A **full-stack finance tracker app** built using **React Native (Expo)** for the frontend and **Express.js + PostgreSQL** for the backend. The project allows users to **track income and expenses**, **tag transactions**, and **view summary via a dashboard**. It features **user authentication** with [Clerk](https://clerk.dev), **rate-limiting** using Upstash Redis, and a backend hosted on [Render.com](https://render.com) with a Neon.tech PostgreSQL database.
+A **full-stack finance tracker app** built using **React Native (Expo)** for the frontend and **Express.js + PostgreSQL** for the backend. The project allows users to **track income and expenses**, **tag transactions**, and **view summary via a dashboard**. It features **user authentication** with [Clerk](https://clerk.dev), **rate-limiting** using Upstash Redis, and a backend hosted on [Render.com](https://render.com) with a [Neon.tech](https://neon.com) PostgreSQL database.
 
 ## Looking for the backend? Check it out here 👉 [Spenza Backend Repo](https://github.com/USER1043/spenza-api.git)
 
@@ -102,9 +102,10 @@ The frontend is built using React Native with Expo, providing a smooth and cross
    npm install
    ```
 3. Start the development server
-
+   ```bash
     expo start
-
+   ```
+   
 ---
 
 ## 📈 Planned Improvements
