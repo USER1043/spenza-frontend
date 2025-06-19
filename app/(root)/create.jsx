@@ -13,7 +13,6 @@ import { API_URL } from "../../constants/api";
 import { styles } from "../../assets/styles/create.styles";
 import { Ionicons } from "@expo/vector-icons";
 import { COLORS } from "../../constants/color";
-import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const CATEGORIES = [
   { id: "food", name: "Food & Drinks", icon: "fast-food" },
@@ -27,7 +26,7 @@ const CATEGORIES = [
 
 const CreateScreen = () => {
   const router = useRouter();
-  const user = useUser();
+  const { user } = useUser();
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -59,9 +58,9 @@ const CreateScreen = () => {
         },
         body: JSON.stringify({
           user_id: user.id,
-          title,
-          amount: formattedAmount,
+          title: title,
           category: selectedCategory,
+          amount: formattedAmount,
         }),
       });
 
@@ -73,7 +72,7 @@ const CreateScreen = () => {
       Alert.alert("Success", "Transaction created successfully");
       router.back();
     } catch (error) {
-      Alert.alert("Error", errorData.error || "Failed to create transaction");
+      Alert.alert("Error", error.message || "Failed to create transaction");
       console.error("Error creating transaction:", error);
     } finally {
       setIsLoading(false);
@@ -162,7 +161,7 @@ const CreateScreen = () => {
             placeholder="0.00"
             placeholderTextColor={COLORS.textLight}
             value={amount}
-            onChange={setAmount}
+            onChangeText={setAmount}
             keyboardType="numeric"
           />
         </View>
@@ -180,7 +179,7 @@ const CreateScreen = () => {
             placeholder="Transaction Title"
             placeholderTextColor={COLORS.textLight}
             value={title}
-            onChange={setTitle}
+            onChangeText={setTitle}
           />
         </View>
 
