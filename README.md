@@ -12,7 +12,7 @@ A **full-stack finance tracker app** built using **React Native (Expo)** for the
 - **React Native (Expo)**
 - **React Navigation**
 - **Clerk** (Authentication)
-- **Axios** (API calls)
+- **fetch API** (for HTTP requests)
 
 ### Backend
 - **Express.js**
